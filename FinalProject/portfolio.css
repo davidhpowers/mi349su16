@@ -1,27 +1,52 @@
 
+#timeLineContainer{
+	overflow-x: scroll;
+}
+
 #timeLine{
 	position: relative;
-	height: 300px;
+	height: 350px;
 
-	left: 0;
+	left: -15px;
 	right: 0;
 	background: white;
 	border: 3px solid black;
+
+	background: transparent;
+	border: none;
+
+	text-align: center;
+
+}
+
+#timeLine h2{
+	margin-top: 20px;
+
+	font-size: 30px;
 }
 
 .dateLine{
 	position: absolute;
-	left: 15px;
-	right: 15px;
-	top: 50%;
+	top: 70%;
+
+	left: 50%;
+
+
+
 	height: 20px;
 	background: black;
 	border-radius: 10px;
-	line-height: 20px;
+	line-height: 10px;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index: 1;
 }
 
+
+
 .dateMarker{
-	
+	position: relative;
+
 	background: white;
 
 	display: inline-block;
@@ -37,7 +62,17 @@
 }
 
 .dateMarker.big:first-child{
-	margin-left: 15px;
+
+	margin-left: 15px !important;
+
+	height: 20px;
+	width: 2px;
+}
+
+.dateMarker.big:last-child{
+	/*
+        margin-right: 15px !important;
+    */
 	height: 20px;
 	width: 2px;
 }
@@ -48,6 +83,163 @@
 	width: 1px;
 }
 
+.year{
+	position: absolute;
+	top: 30px;
+	left: -35px;
+	height: auto;
+	width: 70px;
+
+	font-size: 25px;
+	line-height: 25px;
+	text-align: center;
+
+
+
+	z-index: 1;
+}
+
+.month{
+	position: absolute;
+	top: -30px;
+	left: -5px;
+	left: -25px;
+	height: auto;
+	width: 50px;
+
+	font-size: 18px;
+	line-height: 20px;
+	text-align: center;
+	z-index: 1;
+}
+
+.dateMarker.big .month{
+	top: -25px;
+}
+
+.bracket{
+	position: absolute;
+
+	left: 0px;
+	left: 15px;
+	left: 0px;
+	width: 200px;
+
+	display: inline-block;
+	z-index: 0;
+
+	background: #EAEAEA;
+	background: lightgray;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.bracket.up{
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+	border: none;
+}
+
+.bracket.down{
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+	border: none;
+
+	top: 20px;
+}
+
+.bracket.short.up{
+	height: 50px;
+	top: -50px;
+}
+
+.bracket.medium.up{
+	height: 100px;
+	top: -100px;
+}
+
+.bracket.tall.up{
+	height: 150px;
+	top: -150px;
+}
+
+.bracket.short.down{
+	height: 50px;
+}
+
+.bracket.medium.down{
+	height: 100px;
+}
+
+.bracket.tall.down{
+	height: 150px;
+}
+
+
+.bracket:nth-child(odd){
+	background: #4CAF50;
+}
+
+
+/* General Motors */
+#bracket1, #bracket2, #bracket3{
+	background: #003399;
+	background: rgb(4, 52, 177);
+	background: rgb(0, 51, 160);
+	background: #1349c;
+	background: none;
+	border: none;
+	z-index: 1;
+
+	background: #EAEAEA;
+	background: lightgray;
+	background: #4CAF50;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+
+}
+
+#bracket4{
+	background: #18453b;
+	background: #008183;
+	background: #4CAF50;
+	background: gray;
+
+	border: none;
+	z-index: 0;
+
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+
+	background: lightblue;
+}
+
+.month{
+	display: none;
+}
+
+
+
+
+.event{
+	position: absolute;
+	left: 50%;
+	margin-left: -10px;
+	width: 20px;
+	top: 0px;
+	height: 20px;
+	background: orange;
+	border-radius: 50%;
+}
 
 #dpfc{
 
