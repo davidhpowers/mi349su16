@@ -1,0 +1,458 @@
+html, body, header, footer, hgroup, nav, article, section, figure, 
+figcaption, h1, h2, h3, body, div, p, img {
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   border: 0;
+   		  box-sizing: border-box;
+}
+
+ul{
+	margin-top: 0;
+}
+
+html{
+
+		margin: 0 auto;
+		  box-sizing: border-box;
+}
+
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+body {
+
+   
+	background: white url("http://i.imgur.com/gs2hgiB.jpg");
+	background: white;
+	
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: helvetica;
+	
+
+	min-width: 600px;
+	max-width: 1950px;
+	line-height: 25px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+main{
+		background-color: white;
+}
+
+h1{
+	font-size: 22px;
+}
+
+
+article >ul{
+	position: relative;
+	left: 150px;
+	top: -125px;
+}
+
+
+input {
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+	background: #EAEAEA;
+	display: none;
+}
+
+input[type="submit"] {
+    background: rgba(30,86,160,1);
+    color: white;
+
+}
+
+img{
+	width: auto;
+	height: 100px;
+	margin: 15px;
+}
+
+.fa{
+	color: black;
+	font-size: 35px;
+	padding-left: 10px;
+}
+
+.fa:first-child{
+	padding-left: 0;
+}
+
+header .fa:hover{
+	color: #4CAF50;
+	cursor: pointer;
+}
+
+p{
+	margin: 15px;
+}
+
+.menu{
+	position: relative;
+	top: 15px;
+	left: 15px;
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	color: white;	
+
+}
+
+.fa-home{
+	position: relative;
+	top: 15px;
+	left: 15px;
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	color: white;
+	padding: 0;
+}
+
+.leftArrow{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	display: none;
+}
+
+header{
+	position: relative;
+	height: auto;
+
+	top: 0;
+
+	left: 0;
+
+
+
+}
+
+#profile{
+	position: relative;
+	top: 80px;
+
+	background: white url("images/detroit.jpg");
+	background-size: cover;
+	background-position: center;
+	background-position: center -40px;
+	background-position: center;
+	left: 0;
+	right: 0;
+	height: 400px;
+	height: 375px;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+@media screen and (min-width: 1200px) {
+	#profile{
+		height: 500px;
+		height: 450px;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	#profile{
+		height: 625px;
+		height: 550px;
+	}
+}
+
+#connect{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	height: 50px;
+	width: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+	background: white;
+	line-height: 60px;
+
+	
+	border-radius: 5px;
+}
+
+#menuBar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	left: 0;
+	top: 0;
+
+	background: #EAEAEA;
+	background: transparent;
+	z-index: 1;
+	background: black;
+}
+
+.black{
+	background: black !important;
+}
+
+#extra{
+	display: none;
+}
+
+.escape{
+	display: none;
+}
+
+#profilePic{
+	position: absolute;
+	top: 50%;
+	margin-top: -75px;
+	right: 50%;
+    border-radius: 50%;
+	border: 3px solid white;
+    width: 150px;
+    height: 150px;
+	margin-right: 15px;
+}
+
+#name{
+	position: absolute;
+	left: 50%;
+	margin-left: 15px;
+	line-height: 500px;
+	color: white;
+	font-size: 40px;
+}
+
+
+
+article{
+	position: relative;
+	padding: 15px;
+}
+
+article:nth-child(odd){
+	background: #EAEAEA;
+}
+
+.fa-desktop{
+	margin-top: 15px;
+	width: 100px;
+	height: 100px;
+	font-size: 100px;
+}
+
+nav{
+	position: relative;
+	background: #4682B4;
+
+	height: 50px;
+	text-align: center;
+	
+}
+
+nav>ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+
+	line-height: 50px;
+	text-align: center;
+	width: 20%;
+	list-style: none;
+	color: white;
+
+}
+
+.line{
+	position: relative;
+	left: 101%;
+	top: -35px;
+	height: 20px;
+	width: 1px;
+	background: white;
+}
+
+
+nav li:first-child{
+
+
+}
+
+nav li:hover{
+	background: white;
+	cursor: pointer;
+	color: black;
+}
+
+nav li:hover a{
+	cursor: pointer;
+	color: black;
+}
+
+
+#news{
+	position: relative;
+	background: #EAEAEA;
+
+	text-align: center;
+	display: none;
+}
+
+
+div.card {
+  width: 27%;
+	
+
+  
+
+  text-align: center;
+  	display: inline-block;
+	margin: 15px;
+	background: white;
+	border-radius: 5px;
+	/*
+	margin-bottom: 50px;
+	*/
+}
+
+div.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+	border-top-left-radius:5px;
+
+	border-top-right-radius:5px;
+}
+
+div.container {
+    padding: 10px;
+}
+
+div.card:hover{
+	cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+
+.fa-angle-down{
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	font-size: 50px;
+	padding: 0;
+	border-radius: 50%;
+	display: none;
+}
+
+.fa-angle-down:hover{
+	background: #4CAF50;
+	cursor: pointer;
+	color: white;
+}
+
+
+footer{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 275px;
+	background: black;	
+
+	list-style: none;
+	color: white;
+	text-align: center;
+	line-height: 45px;
+}
+
+footer ul, footer li{
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Each Separate List */
+footer > ul{
+	margin: 15px;
+	margin-top: 20px;
+	vertical-align: top;
+	display: inline-block;
+	border-right: 1px solid white;
+	padding-right: 30px;
+
+}
+
+footer .fa{
+	color: white;
+}
+
+footer >ul .fa:hover{
+	color: #4CAF50;
+}
+
+footer > ul:last-child{
+	border: none;
+	padding: none;
+}
+
+/* Each List Title */
+footer > ul  > li{
+	margin-top: 0;
+}
+
+/* Each sub list */
+footer > ul  > ul{
+	margin-top: 15px;
+}
+
+footer > ul  > ul > li:hover{
+
+	cursor: pointer;
+	color: #4CAF50;
+}
+
+footer li{
+
+	list-style: none;
+
+}
+
+.fa-copyright{
+
+	font-size: 15px;
+	padding: 0;
+}
+
+#copyright{
+	position: absolute;
+	left: 50%;
+	width: 400px;
+	margin-left: -200px;
+	bottom: 5px;
+	padding: 0;
+	text-align: center;
+
+}
+

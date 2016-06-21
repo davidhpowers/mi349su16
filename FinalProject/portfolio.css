@@ -1,0 +1,103 @@
+
+#timeLine{
+	position: relative;
+	height: 300px;
+
+	left: 0;
+	right: 0;
+	background: white;
+	border: 3px solid black;
+}
+
+.dateLine{
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	top: 50%;
+	height: 20px;
+	background: black;
+	border-radius: 10px;
+	line-height: 20px;
+}
+
+.dateMarker{
+	
+	background: white;
+
+	display: inline-block;
+
+	vertical-align: middle;
+
+}
+
+.dateMarker.big{
+
+	height: 20px;
+	width: 2px;
+}
+
+.dateMarker.big:first-child{
+	margin-left: 15px;
+	height: 20px;
+	width: 2px;
+}
+
+.dateMarker.small{
+
+	height: 10px;
+	width: 1px;
+}
+
+
+#dpfc{
+
+}
+
+img{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+	-webkit-transition: width 2s; /* Safari */
+    transition: width .5s;
+	
+
+}
+
+#dpfc img, #rossorama img{
+	position: relative;
+	width: 60%;
+	width: 300px;
+	height: auto;
+	vertical-align: top;
+}
+
+#SharePoint{
+	/*
+	text-align: center;
+*/
+}
+
+#SharePoint img{
+	width: 25%;
+	width: 200px;
+	height: auto;
+	vertical-align: middle;
+	vertical-align: top;
+}
+
+#SharePoint img:hover{
+	/*
+	width: 300px;
+	*/
+	cursor: pointer;
+}
+
+#dpfc img:hover, #rossorama img:hover{
+	/*
+	width: 500px;
+	*/
+	cursor: pointer;
+}
+
+
+
+
