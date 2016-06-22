@@ -11,6 +11,12 @@ $(document).ready(function(){
 	// Bracket Array
 	// [start month , start year , end month , end year , short/medium/tall , up/down]
 	var brackets = [
+		// High School
+		[9, 2008, 6, 2012, "medium", "up"],
+
+		// MSU
+		[8, 2012, 12, 2016, "tall", "up"],
+
 		// GM 1st Internship
 		[5, 2014, 8, 2014, "tall", "up"],
 
@@ -19,9 +25,6 @@ $(document).ready(function(){
 
 		// GM 3rd Internship
 		[5, 2016, 8, 2016, "tall", "up"],
-
-		// MSU
-		[8, 2012, 12, 2016, "tall", "up"],
 
 		// Tru Design Internship
 		[12, 2014, 1, 2015, "medium", "up"],
@@ -38,14 +41,26 @@ $(document).ready(function(){
 		// FIRST Robotics
 		[12, 2011, 4, 2012, "medium", "up"],
 
-		// High School
-		[9, 2008, 6, 2012, "medium", "up"],
-
 		// Student Council
 		[9, 2008, 6, 2012, "short", "up"],
 
 		// Dave Powers Fence Co.
-		[6, 2011, 8, 2012, "short", "up"]
+		[6, 2011, 8, 2012, "short", "up"],
+
+		// Audio Enthusiasts & Engineers
+		[1, 2015, 5, 2015, "short", "up"],
+
+		// Student Representative on School Board
+		[9, 2011, 5, 2012, "short", "up"],
+
+		// Lyle A. Torrant Center Volunteer
+		[8, 2011, 5, 2012, "short", "up"],
+
+		// Varsity Cross Country & Track - Team Captain & Academic All Conference
+		[8, 2008, 6, 2012, "short", "up"],
+
+		// MSU Detroit Semester
+		[5, 2015, 8, 2015, "medium", "up"]
 	];
 
 	// Event Array
@@ -137,7 +152,7 @@ function timeLine(totalYears, startYear, margin) {
 		while(months <= 11){
 
 			if (months == 6) {
-				$( ".dateMarkers" ).append('<div id="'+(months + 1)+"-"+year+'" class="dateMarker small"><div class="month">'+ (months + 1) +'</div><div class="year">'+ year +'</div></div>');
+				$( ".dateMarkers" ).append('<div id="'+(months + 1)+"-"+year+'" class="dateMarker small"><div class="month">'+ (months + 1) +'</div><div class="year">'+ year +'<div class="yearBracket"><span class="curlyBrace">}</span></div></div></div></div>');
 			}
 			else{
 				// Small Date Marker

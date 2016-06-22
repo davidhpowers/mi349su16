@@ -85,11 +85,10 @@
 
 .year{
 	position: absolute;
-	top: 30px;
+	top: 80px;
 	left: -35px;
 	height: auto;
 	width: 70px;
-
 	font-size: 25px;
 	line-height: 25px;
 	text-align: center;
@@ -97,6 +96,25 @@
 
 
 	z-index: 1;
+}
+
+.yearBracket {
+	position: absolute;
+	top: -45px;
+	left: 17px;
+	height: auto;
+	width: auto;
+	background: orange;
+	font-size: 250px;
+	font-weight: lighter;
+	font-family: 'Lato';
+}
+
+.curlyBrace{
+	position: absolute;
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Safari */
+	transform: rotate(90deg);
 }
 
 .month{
@@ -198,7 +216,7 @@
 	background: #1349c;
 	background: none;
 	border: none;
-	z-index: 1;
+	z-index: 0;
 
 	background: #EAEAEA;
 	background: lightgray;
