@@ -60,7 +60,7 @@ $(document).ready(function(){
 		[8, 2008, 6, 2012, "short", "up"],
 
 		// MSU Detroit Semester
-		[5, 2015, 8, 2015, "medium", "up"]
+		[5, 2015, 8, 2015, "short", "up"]
 	];
 
 	// Event Array
