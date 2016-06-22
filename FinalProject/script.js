@@ -2,19 +2,50 @@ $(document).ready(function(){
 
 	console.log("Hello World");
 
-	var totalYears = 4;
+	var totalYears = 8;
 
-	var startYear = 2012;
+	var startYear = 2008;
 
 	var margin = 20;
 
 	// Bracket Array
 	// [start month , start year , end month , end year , short/medium/tall , up/down]
 	var brackets = [
-		[5, 2014, 8, 2014, "short", "up"],
-		[5, 2015, 8, 2015, "short", "up"],
-		[5, 2016, 8, 2016, "short", "up"],
-		[8, 2012, 12, 2016, "medium", "up"]
+		// GM 1st Internship
+		[5, 2014, 8, 2014, "tall", "up"],
+
+		// GM 2nd Internship
+		[5, 2015, 8, 2015, "tall", "up"],
+
+		// GM 3rd Internship
+		[5, 2016, 8, 2016, "tall", "up"],
+
+		// MSU
+		[8, 2012, 12, 2016, "tall", "up"],
+
+		// Tru Design Internship
+		[12, 2014, 1, 2015, "medium", "up"],
+
+		// University Activities Board
+		[1, 2013, 5, 2013, "short", "up"],
+
+		// Big Brothers Big Sisters
+		[8, 2011, 6, 2012, "short", "up"],
+
+		// National Honor Society
+		[8, 2010, 6, 2012, "short", "up"],
+
+		// FIRST Robotics
+		[12, 2011, 4, 2012, "medium", "up"],
+
+		// High School
+		[9, 2008, 6, 2012, "medium", "up"],
+
+		// Student Council
+		[9, 2008, 6, 2012, "short", "up"],
+
+		// Dave Powers Fence Co.
+		[6, 2011, 8, 2012, "short", "up"]
 	];
 
 	// Event Array
