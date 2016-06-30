@@ -2,70 +2,82 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <title>David Powers | Portfolio</title>
+	<meta charset="UTF-8">
+	<title>David Powers | Portfolio</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
-    
+
 	<script src="script.js"></script>
 	<link rel="stylesheet" href="font-awesome-4.6.3\css\font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
-	
-	
+
+	<link rel="icon" href="pictures\favicon-user.ico">
 </head>
 <body>
 
-	<header>
-	
-		<div id="menuBar">
-			<i class="fa fa-bars menu" aria-hidden="true"></i>
-			<i class="fa fa-times escape" aria-hidden="true"></i>
-			<i class="fa fa-angle-left leftArrow" aria-hidden="true"></i>
-			<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-			
-			<div id="connect">
-				<i class="fa fa-twitter twitter" aria-hidden="true"></i>
-				<i class="fa fa-github github" aria-hidden="true"></i>
-				<i class="fa fa-linkedin linkedin" aria-hidden="true"></i>
-				<i class="fa fa-envelope email" aria-hidden="true"></i>
+<header>
+
+	<div id="menuBar">
+		<i class="fa fa-times escape" aria-hidden="true"></i>
+		<i class="fa fa-angle-left leftArrow" aria-hidden="true"></i>
+		<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+
+		<div id="connect">
+			<a href="https://twitter.com/_DavidPowers_" target='_blank'><i class="fa fa-twitter twitter" aria-hidden="true"></i></a>
+			<a href="https://github.com/davidhpowers" target='_blank'><i class="fa fa-github github" aria-hidden="true"></i></a>
+			<a href="https://www.linkedin.com/in/davidhpowers" target='_blank'><i class="fa fa-linkedin linkedin" aria-hidden="true"></i></a>
+			<a href="contact.html"><i class="fa fa-envelope email" aria-hidden="true"></i></a>
+		</div>
+
+	</div>
+
+	<div id="profile">
+
+	</div>
+
+
+
+	<div id="extra">
+		<img id="profilePic" src="http://i.imgur.com/ZL9AUxB.jpg">
+		<h1 id="name">David Powers</h1>
+		<i class="fa fa-phone phone" aria-hidden="true"></i>
+		<i class="fa fa-file-pdf-o pdf" aria-hidden="true"></i>
+		<i class="fa fa-angle-down" aria-hidden="true"></i>
+		<input class="searchBox" type="search" placeholder="Search">
+		<i class="fa fa-search searchIcon" aria-hidden="true"></i>
+	</div>
+
+</header>
+
+<nav>
+	<ul>
+		<a href="index.html"><li>Home</li></a>
+		<a href="aboutme.html"><li>About Me</li></a>
+		<a href="portfolio.html"><li>Portfolio</li></a>
+		<a href="contact.html"><li>Contact</li></a>
+	</ul>
+</nav>
+
+<main id="main">
+
+	<article id="entireTimeLine">
+		<div id="timeLineExtras">
+			<h2>Timeline</h2>
+			<div id="timeLineFilter">
+				<form>
+					<input type="radio" name="filter" value="All" checked>All<br>
+					<input type="radio" name="filter" value="Education"> Education<br>
+					<input type="radio" name="filter" value="WorkExperience"> Work Experience<br>
+					<input type="radio" name="filter" value="Volunteering"> Volunteering / Extra-Curricular<br>
+				</form>
 			</div>
 
 		</div>
-		
-		<div id="profile">
 
-		</div>
-		
-
-		
-		<div id="extra">
-					<img id="profilePic" src="http://i.imgur.com/ZL9AUxB.jpg">
-			<h1 id="name">David Powers</h1>
-			<i class="fa fa-phone phone" aria-hidden="true"></i>
-			<i class="fa fa-file-pdf-o pdf" aria-hidden="true"></i>
-			<i class="fa fa-angle-down" aria-hidden="true"></i>
-			<input class="searchBox" type="search" placeholder="Search">
-			<i class="fa fa-search searchIcon" aria-hidden="true"></i>
-		</div>
-		
-	</header>
-    
-	<nav>
-		<ul>
-			<li>About Me<div class="line"></div></li>
-			<a href="portfolio.html"><li>Portfolio<div class="line"></div></li></a>
-			<li>Blog<div class="line"></div></li>
-			<a href="contact.html"><li>Contact</li></a>
-		</ul>
-	</nav>
-	
-	<main id="main">
-
-		<article id="timeLineContainer">
+		<div id="timeLineContainer">
 			<div id="timeLine">
-				<h2>Timeline</h2>
 
 				<div class="dateLine">
 
@@ -81,76 +93,74 @@
 					</div>
 
 				</div>
-
-
-
 			</div>
-		</article>
-	
-		<article id="dpfc">
-			
-			<h2>Dave Powers Fence Co.</h2>
-		
-			<img src="pictures/dpfc.png">
-			<img src="pictures/dpfc_products.png">
-			
-		</article>
-		
-		<article id="SharePoint">
-		
-			<h2>General Motors | SharePoint Mobile</h2>
-			
-			<img src="pictures/GeneralMotors/SP_Home.png">
-			<img src="pictures/GeneralMotors/SP_Menu1.png">
-			<img src="pictures/GeneralMotors/SP_Menu2.png">
-		
-		</article>
-		
-		<article id="rossorama">
-			<h2>Rossorama Music Festival</h2>
-			
-			<img src="pictures/rossorama.png">
-			
-		</article>
-		
-	</main>
-	
-	<footer>
-		<ul>
-			<li><h2>Useful Links</h2></li>
-			<ul>
-				<li>About Me</li>
-				<li>Portfolio</li>
-				<li>Blog</li>
-			</ul>
-		
-		</ul>	
-			
-		<ul>
-			<li><h2>Contact Info</h2></li>
-			<ul>
-				<li>(517) 240 - 6043</li>
-				<li>davidhpowers@gmail.com</li>
-				<li>East Lansing, MI</li>
-			</ul>
-		
-		</ul>		
-
-		<div id="copyright">
-			<i class="fa fa-copyright" aria-hidden="true">&emsp;2016 - David Powers - All rights reserved.</i>
 		</div>
-		
+	</article>
+
+	<article id="dpfc">
+
+		<h2>Dave Powers Fence Co.</h2>
+
+		<img src="pictures/dpfc.png">
+		<img src="pictures/dpfc_products.png">
+
+	</article>
+
+	<article id="SharePoint">
+
+		<h2>General Motors | SharePoint Mobile</h2>
+
+		<img src="pictures/GeneralMotors/SP_Home.png">
+		<img src="pictures/GeneralMotors/SP_Menu1.png">
+		<img src="pictures/GeneralMotors/SP_Menu2.png">
+
+	</article>
+
+	<article id="rossorama">
+		<h2>Rossorama Music Festival</h2>
+
+		<img src="pictures/rossorama.png">
+
+	</article>
+
+</main>
+
+<footer>
+	<ul>
+		<li><h2>Useful Links</h2></li>
 		<ul>
-			<li><h2>Connect</h2></li>
-			<ul>
-				<li><i class="fa fa-twitter twitter" aria-hidden="true"></i></li>
-				<li><i class="fa fa-github github" aria-hidden="true"></i></li>
-				<li><i class="fa fa-linkedin linkedin" aria-hidden="true"></i></li>
-			</ul>
-		</ul>	
+			<li><a href="aboutme.html">Home</a></li>
+			<li><a href="aboutme.html">About Me</a></li>
+			<li><a href="portfolio.html">Portfolio</div></a></li>
+		</ul>
+
+	</ul>
+
+	<ul class="contactInfoFooter">
+		<li><h2>Contact Info</h2></li>
+		<ul>
+			<li>(517) 240 - 6043</li>
+			<li>davidhpowers@gmail.com</li>
+			<li>East Lansing, MI</li>
+		</ul>
+
+	</ul>
+
+	<div id="copyright">
+		<i class="fa fa-copyright" aria-hidden="true">&emsp;2016 - David Powers - All rights reserved.</i>
+	</div>
+
+	<ul>
+		<li><h2>Connect</h2></li>
+		<ul>
+			<li><a href="https://twitter.com/_DavidPowers_" target='_blank'><i class="fa fa-twitter twitter" aria-hidden="true"></i></a></li>
+			<li><a href="https://github.com/davidhpowers" target='_blank'><i class="fa fa-github github" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/davidhpowers" target='_blank'><i class="fa fa-linkedin linkedin" aria-hidden="true"></i></a></li>
+		</ul>
+	</ul>
 
 
 
-	</footer>
+</footer>
 </body>
 </html>

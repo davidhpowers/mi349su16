@@ -1,33 +1,90 @@
 
+
+#entireTimeLine{
+	text-align: center;
+
+	padding: 0;
+}
+
 #timeLineContainer{
 	overflow-x: scroll;
+	position: relative;
+	left: 0;
+	width: 100%;
+
 }
 
 #timeLine{
 	position: relative;
-	height: 350px;
+	height: 450px;
+	height: 550px;
 
-	left: -15px;
+	left: 0;
+
+
 	right: 0;
 	background: white;
 	border: 3px solid black;
 
 	background: transparent;
-	border: none;
 
-	text-align: center;
+	border: none;
+}
+
+
+#timeLineExtras{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 225px;
+	width: 100%;
+
 
 }
 
-#timeLine h2{
+#timeLineFilter{
+	position: absolute;
+	top: 60px;
+	right: 50%;
+	left: 15%;
+	bottom: 0;
+
+	text-align: left;
+	padding: 10px;
+	z-index: 1;
+}
+
+input[type=radio]{
+	background: red;
+	border: 3px;
+}
+
+input[type=radio]:hover{
+	cursor: pointer;
+}
+
+input[type=radio] span:checked{
+	color: red;
+	background: orange;
+}
+
+#timeLineExtras h2{
 	margin-top: 20px;
 
 	font-size: 30px;
 }
 
+
+
+
+
+
+
+
 .dateLine{
 	position: absolute;
 	top: 70%;
+	top: 60%;
 
 	left: 50%;
 
@@ -88,6 +145,8 @@
 	top: 80px;
 
 	top: 30px;
+	top: 90px;
+	top: 130px;
 
 	left: -35px;
 	height: auto;
@@ -215,8 +274,9 @@
 }
 
 
-/* General Motors */
-#bracket1, #bracket2, #bracket3{
+/* Education */
+/*
+#bracket1, #bracket2 {
 	background: #003399;
 	background: rgb(4, 52, 177);
 	background: rgb(0, 51, 160);
@@ -230,9 +290,20 @@
 	background: #4CAF50;
 	border-top-left-radius: 50%;
 	border-top-right-radius: 50%;
+}
+*/
 
+/* General Motors */
+#bracket3, #bracket4, #bracket5{
+	background: lightblue;
 }
 
+/* FIRST */
+#bracket8{
+	z-index: 2;
+}
+
+/*
 #bracket4{
 	background: #18453b;
 	background: #008183;
@@ -247,6 +318,7 @@
 
 	background: lightblue;
 }
+*/
 
 .month{
 	display: none;
@@ -272,10 +344,10 @@
 
 img{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	
+
 	-webkit-transition: width 2s; /* Safari */
-    transition: width .5s;
-	
+	transition: width .5s;
+
 
 }
 

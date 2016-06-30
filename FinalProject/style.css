@@ -1,11 +1,11 @@
-html, body, header, footer, hgroup, nav, article, section, figure, 
+html, body, header, footer, hgroup, nav, article, section, figure,
 figcaption, h1, h2, h3, body, div, p, img {
-   margin: 0;
-   padding: 0;
-   font-size: 100%;
-   vertical-align: baseline;
-   border: 0;
-   		  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	border: 0;
+	box-sizing: border-box;
 }
 
 ul{
@@ -14,8 +14,8 @@ ul{
 
 html{
 
-		margin: 0 auto;
-		  box-sizing: border-box;
+	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 
@@ -26,17 +26,15 @@ a{
 
 
 body {
-
-   
 	background: white url("http://i.imgur.com/gs2hgiB.jpg");
 	background: white;
-	
-    background-size: cover;
-    background-position: right top;
-    background-repeat: no-repeat;
-    color: black;
-    font-family: helvetica;
-	
+
+	background-size: cover;
+	background-position: right top;
+	background-repeat: no-repeat;
+	color: black;
+	font-family: helvetica;
+
 
 	min-width: 600px;
 	max-width: 1950px;
@@ -47,7 +45,7 @@ body {
 }
 
 main{
-		background-color: white;
+	background-color: white;
 }
 
 h1{
@@ -63,16 +61,16 @@ article >ul{
 
 
 input {
-    border: 0;
-    padding: 10px;
-    font-size: 18px;
+	border: 0;
+	padding: 10px;
+	font-size: 18px;
 	background: #EAEAEA;
-	display: none;
+
 }
 
 input[type="submit"] {
-    background: rgba(30,86,160,1);
-    color: white;
+	background: rgba(30,86,160,1);
+	color: white;
 
 }
 
@@ -88,9 +86,18 @@ img{
 	padding-left: 10px;
 }
 
+#connect a{
+	padding-left: 10px;
+}
+
 .fa:first-child{
 	padding-left: 0;
 }
+
+#connect a:first-child{
+	padding-left: 0;
+}
+
 
 header .fa:hover{
 	color: #4CAF50;
@@ -108,7 +115,7 @@ p{
 	width: 50px;
 	height: 50px;
 	font-size: 50px;
-	color: white;	
+	color: white;
 
 }
 
@@ -152,29 +159,127 @@ header{
 	background: white url("pictures/detroit.jpg");
 	background-size: cover;
 	background-position: center;
-	background-position: center -40px;
-	background-position: center;
+	background-position: center -75px;
 	left: 0;
 	right: 0;
 	height: 400px;
-	height: 375px;
+	height: 350px;
 	background-repeat: no-repeat;
 	z-index: -1;
+}
+
+@media screen and (min-width: 700px) {
+	#profile{
+
+		background-position: center -125px;
+	}
+}
+
+@media screen and (min-width: 815px) {
+	#profile{
+
+		background-position: center -150px;
+	}
+}
+
+
+@media screen and (min-width: 850px) {
+	#profile{
+		background-position: center -170px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	#profile{
+		height: 400px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#profile{
+		background-position: center -200px;
+	}
+}
+
+@media screen and (min-width: 1050px) {
+	#profile{
+		height: 450px;
+	}
+}
+
+
+
+@media screen and (min-width: 1150px) {
+	#profile{
+		height: 500px;
+		height: 475px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
 	#profile{
 		height: 500px;
-		height: 450px;
 	}
 }
 
-@media screen and (min-width: 1400px) {
+
+@media screen and (min-width: 1265px) {
+	#profile{
+		background-position: center -250px;
+	}
+}
+
+
+@media screen and (min-width: 1350px) {
 	#profile{
 		height: 625px;
 		height: 550px;
 	}
 }
+
+@media screen and (min-width: 1480px) {
+	#profile{
+		background-position: center -300px;
+	}
+}
+
+@media screen and (min-width: 1570px) {
+	#profile{
+		height: 600px;
+	}
+}
+
+@media screen and (min-width: 1650px) {
+	#profile{
+		background-position: center -325px;
+	}
+}
+
+@media screen and (min-width: 1700px) {
+	#profile{
+		background-position: center -350px;
+	}
+}
+
+@media screen and (min-width: 1750px) {
+	#profile{
+		height: 625px;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	#profile{
+		height: 650px;
+	}
+}
+
+@media screen and (min-width: 1900px) {
+	#profile{
+		height: 700px;
+	}
+}
+
+
 
 #connect{
 	position: absolute;
@@ -187,7 +292,7 @@ header{
 	background: white;
 	line-height: 60px;
 
-	
+
 	border-radius: 5px;
 }
 
@@ -202,6 +307,49 @@ header{
 	background: transparent;
 	z-index: 2;
 	background: black;
+}
+
+#menuBarNav{
+	position: relative;
+	left: 350px;
+	width: auto;
+	line-height: 40px;
+	display: none;
+}
+
+#menuBarNav a{
+	padding-left: 15px;
+}
+
+#menuBarNav a:first-child{
+	padding-left: 0px;
+}
+
+#menuBarNav a:hover{
+	color: #4CAF50;
+}
+
+#menuBar h1{
+
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	position: relative;
+	left: 75px;
+	left: 15px;
+	top: 50%;
+	width: auto;
+	font-size: 50px;
+	line-height: 50px;
+	margin-top: -25px;
+}
+
+#menuBar h1:hover{
+	color: #4CAF50;
+	cursor: pointer;
+}
+
+.fa-home{
+	display: none;
 }
 
 .black{
@@ -221,10 +369,10 @@ header{
 	top: 50%;
 	margin-top: -75px;
 	right: 50%;
-    border-radius: 50%;
+	border-radius: 50%;
 	border: 3px solid white;
-    width: 150px;
-    height: 150px;
+	width: 150px;
+	height: 150px;
 	margin-right: 15px;
 }
 
@@ -258,10 +406,11 @@ article:nth-child(odd){
 nav{
 	position: relative;
 	background: #4682B4;
+	background: black;
 
 	height: 50px;
 	text-align: center;
-	
+
 }
 
 nav>ul{
@@ -317,13 +466,13 @@ nav li:hover a{
 
 
 div.card {
-  width: 27%;
-	
+	width: 27%;
 
-  
 
-  text-align: center;
-  	display: inline-block;
+
+
+	text-align: center;
+	display: inline-block;
 	margin: 15px;
 	background: white;
 	border-radius: 5px;
@@ -333,23 +482,23 @@ div.card {
 }
 
 div.header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    font-size: 40px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	font-size: 40px;
 	border-top-left-radius:5px;
 
 	border-top-right-radius:5px;
 }
 
 div.container {
-    padding: 10px;
+	padding: 10px;
 }
 
 div.card:hover{
 	cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 
@@ -379,7 +528,7 @@ footer{
 	left: 0;
 	width: 100%;
 	height: 275px;
-	background: black;	
+	background: black;
 
 	list-style: none;
 	color: white;
@@ -412,9 +561,18 @@ footer >ul .fa:hover{
 	color: #4CAF50;
 }
 
+footer >ul a:hover{
+	color: #4CAF50;
+}
+
 footer > ul:last-child{
 	border: none;
 	padding: none;
+}
+
+.contactInfoFooter>ul li:hover{
+	color: white;
+	cursor: default;
 }
 
 /* Each List Title */
