@@ -1,0 +1,40 @@
+
+Final Project Copywriting
+
+Content Sections:
+
+Education:
+	Michigan State University
+	Computer Engineering Major
+
+Work Experience:
+	General Motors - Software Development Intern
+		Sharepoint Development
+		Mobile Website Development
+		Web Automation Testing
+
+Technical Skills:
+	Web Design and Development - HTML, CSS, JavaScript, PHP
+	Programming - C++, Python, Java
+	Information Technology - SharePoint, Selenium web automation
+
+Web Design work:
+	Dave Powers Fence Co.
+	davidhpowers.com
+	rossorama.com
+
+Contact information:
+	Name: David Powers
+	Address: 3875 Franklin Rd. Jackson MI, 49203
+	Cell: (517) 240-6043
+	Email: davidhpowers@gmail.com
+
+Important links:
+	LinkedIn
+	GitHub
+	Email
+
+Resume download:
+	PDF version of resume
+	Download button
+
