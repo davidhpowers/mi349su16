@@ -591,6 +591,14 @@ article{
 	padding: 15%;
 	padding-top: 100px;
 	padding-bottom: 100px;
+	padding-bottom: 0;
+}
+
+
+article:first-child{
+	padding: 15%;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 article:nth-child(odd){
@@ -813,4 +821,5 @@ footer li{
 	text-align: center;
 
 }
+
 

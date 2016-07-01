@@ -380,16 +380,16 @@ img{
 }
 
 #SharePoint img:hover{
-	/*
+
 	width: 300px;
-	*/
+
 	cursor: pointer;
 }
 
 #dpfc img:hover, #rossorama img:hover{
-	/*
+
 	width: 500px;
-	*/
+
 	cursor: pointer;
 }
 
@@ -407,3 +407,4 @@ img{
 #resume a:hover{
 	color: green;
 }
+
