@@ -25,6 +25,8 @@ a{
 }
 
 
+
+
 body {
 	background: white url("http://i.imgur.com/gs2hgiB.jpg");
 	background: white;
@@ -34,14 +36,18 @@ body {
 	background-repeat: no-repeat;
 	color: black;
 	font-family: helvetica;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
 
 
 	min-width: 600px;
+	min-width: 700px;
+
 	max-width: 1950px;
 	line-height: 25px;
 	margin: 0 auto;
 	box-sizing: border-box;
-	overflow-x: hidden;
+
 }
 
 main{
@@ -138,7 +144,58 @@ p{
 	height: 50px;
 	font-size: 50px;
 	display: none;
+	color: white;
 }
+
+
+#scrollMenu{
+	position: fixed;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: rgba(25,67,102, 1);
+	z-index: 3;
+	display: none;
+}
+
+#scrollMenuNav{
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	width: 500px;
+	height: 50px;
+	margin-left: -250px;
+
+
+	border-radius: 5px;
+	list-style: none !important;
+
+}
+
+
+#scrollMenuNav ul{
+	margin: 0;
+	padding: 0;
+}
+
+#scrollMenuNav li{
+	list-style: none;
+	text-align: center;
+	background: #4CAF50;
+	font-size: 30px;
+	margin-top: 50px;
+	line-height: 50px;
+}
+
+#scrollMenuNav a:hover {
+	color: black !important;
+	background: white;
+	cursor: pointer;
+}
+
+
+
 
 header{
 	position: relative;
@@ -152,6 +209,19 @@ header{
 
 }
 
+.fa-bars{
+	top: 15px;
+	left: 15px;
+	height: 50px;
+	position: relative;
+	color: white;
+	width: 50px;
+	font-size: 50px;
+	text-align: center;
+	display: none;
+}
+
+
 #profile{
 	position: relative;
 	top: 80px;
@@ -159,40 +229,96 @@ header{
 	background: white url("pictures/detroit.jpg");
 	background-size: cover;
 	background-position: center;
-	background-position: center -75px;
+	background-position: center -60px;
 	left: 0;
 	right: 0;
 	height: 400px;
-	height: 350px;
 	background-repeat: no-repeat;
 	z-index: -1;
 }
 
+#profileInfo{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 25%;
+	width: 350px;
+	width: 335px;
+
+
+
+	background: rgba(76,175,80,.65);
+	background: rgba(0,0,128,.50);
+
+	/* #194366 */
+	background: rgba(25,67,102, .65);
+	text-align: center;
+}
+
+#profilePic{
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+
+	bottom: 50%;
+
+	border-radius: 50%;
+	border: 3px solid white;
+	width: 150px;
+	height: 150px;
+	z-index: 2;
+
+}
+
+
+
+#profileInfo .text{
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	right: 15px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	line-height: 30px;
+	background: #4CAF50;
+	border-radius: 5px;
+}
+
+
+
 @media screen and (min-width: 700px) {
+	#profile{
+
+		background-position: center -100px;
+	}
+
+
+}
+
+@media screen and (min-width: 815px) {
 	#profile{
 
 		background-position: center -125px;
 	}
 }
 
-@media screen and (min-width: 815px) {
-	#profile{
-
-		background-position: center -150px;
-	}
-}
-
 
 @media screen and (min-width: 850px) {
 	#profile{
-		background-position: center -170px;
+		background-position: center -150px;
 	}
 }
 
 @media screen and (min-width: 900px) {
 	#profile{
 		height: 400px;
+		background-position: center -170px;
 	}
+
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -213,6 +339,21 @@ header{
 	#profile{
 		height: 500px;
 		height: 475px;
+	}
+
+	#profilePic{
+		position: absolute;
+		left: 50%;
+		margin-left: -100px;
+
+		bottom: 50%;
+
+		border-radius: 50%;
+		border: 3px solid white;
+		width: 200px;
+		height: 200px;
+		z-index: 2;
+
 	}
 }
 
@@ -296,6 +437,12 @@ header{
 	border-radius: 5px;
 }
 
+@media screen and (max-width: 700px) {
+	#connect{
+		display: none;
+	}
+}
+
 #menuBar{
 	position: fixed;
 	height: 80px;
@@ -305,16 +452,23 @@ header{
 
 	background: #EAEAEA;
 	background: transparent;
-	z-index: 2;
+	z-index: 3;
 	background: black;
 }
 
+#menuBar.slide{
+	background: none;
+}
+
 #menuBarNav{
-	position: relative;
+	position: absolute;
 	left: 350px;
 	width: auto;
 	line-height: 40px;
 	display: none;
+	top: 50%;
+	margin-top: -5px;
+
 }
 
 #menuBarNav a{
@@ -329,23 +483,77 @@ header{
 	color: #4CAF50;
 }
 
+@media screen and (max-width: 840px) {
+	#menuBarNav{
+		display: none !important;
+	}
+
+
+
+}
+
+
 #menuBar h1{
 
 	font-family: 'Ubuntu', sans-serif;
 	color: white;
-	position: relative;
+	position: absolute;
 	left: 75px;
 	left: 15px;
 	top: 50%;
 	width: auto;
+	width: 320px;
+	width: 310px;
 	font-size: 50px;
+	font-weight: 300;
 	line-height: 50px;
 	margin-top: -25px;
+}
+
+#menuBar h1.shift{
+
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	position: absolute;
+	left: 75px;
+	left: 15px;
+	left: 70px;
+	top: 50%;
+	width: auto;
+	width: 320px;
+	width: 310px;
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 50px;
+	margin-top: -25px;
+}
+
+#menuBar h1.slide:hover{
+	color: white;
+	cursor: default;
 }
 
 #menuBar h1:hover{
 	color: #4CAF50;
 	cursor: pointer;
+}
+
+header img{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	-webkit-transition: width 2s; /* Safari */
+	transition: width .5s;
+
+
+}
+
+header .text{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	-webkit-transition: width 2s; /* Safari */
+	transition: width .5s;
+
+
 }
 
 .fa-home{
@@ -364,17 +572,7 @@ header{
 	display: none;
 }
 
-#profilePic{
-	position: absolute;
-	top: 50%;
-	margin-top: -75px;
-	right: 50%;
-	border-radius: 50%;
-	border: 3px solid white;
-	width: 150px;
-	height: 150px;
-	margin-right: 15px;
-}
+
 
 #name{
 	position: absolute;
@@ -387,9 +585,12 @@ header{
 
 
 
+
+
 article{
-	position: relative;
-	padding: 15px;
+	padding: 15%;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 article:nth-child(odd){

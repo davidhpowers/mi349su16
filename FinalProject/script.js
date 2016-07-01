@@ -24,6 +24,23 @@ $(document).ready(function(){
 
 	}
 
+	if ($( window ).width() < 840){
+
+		console.log("SIZE: < 840");
+
+		$(".fa-bars").show();
+
+		$("#menuBar h1").addClass("shift");
+
+	}
+	else{
+		$(".fa-bars").hide();
+
+		$("#menuBar h1").removeClass("shift");
+	}
+
+
+
 	// Bracket Array
 	// [start month , start year , end month , end year , short/medium/tall , up/down, title, tag]
 	var brackets = [
@@ -93,7 +110,45 @@ $(document).ready(function(){
 
 	//hideShow(brackets, events);
 
+
+	$(".fa-bars, .leftArrow").click(function(){
+		$("#scrollMenu").toggle();
+
+		if ( $("#scrollMenu").css('display') == 'none' ){
+			$("#menuBar").removeClass("slide");
+			$(".fa-bars").show();
+			$(".leftArrow").hide();
+			$("#menuBar h1").removeClass("slide");
+		}
+		else {
+			$("#menuBar").addClass("slide");
+			$(".fa-bars").hide();
+			$(".leftArrow").show();
+			$("#menuBar h1").addClass("slide");
+		}
+
+
+	});
+
 });
+
+$( window ).resize(function() {
+	if ($( window ).width() < 840){
+
+		console.log("SIZE: < 840");
+
+		$(".fa-bars").show();
+
+		$("#menuBar h1").addClass("shift");
+
+	}
+	else{
+		$(".fa-bars").hide();
+
+		$("#menuBar h1").removeClass("shift");
+	}
+});
+
 
 $(document).scroll(function() {
 	console.log("scroll");

@@ -1,5 +1,10 @@
 
 
+article{
+	position: relative;
+	padding: 15px;
+}
+
 #entireTimeLine{
 	text-align: center;
 
